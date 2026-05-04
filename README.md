@@ -21,7 +21,7 @@
 
 ## Description
 
-Install anc configure BMC control-M agent in order to launch cron tasks
+Install anc configure jdk11
 
 ## Requirements
 
@@ -35,10 +35,8 @@ As the package cannot be downloaded by a public link, you need to provide a path
 
 
 vars:
-  controlm_agent_install_method: url # or file
-  controlm_agent_install_url: "http://downloadpackage/xxxxxxxxx"
-  controlm_agent_primary_server: "servername.exemple.fr"
-  controlm_agent_auth_server: "servername.exemple.fr"
+  jdk11_install_method: url # or file
+  jdk11_install_url: "http://downloadpackage/xxxxxxxxx"
 
 ## Examples
 
