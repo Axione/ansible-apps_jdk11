@@ -22,6 +22,12 @@
     - jdk11_install_method == "url"
     - jdk11_install_url is defined
     - jdk11_install_url | length > 0
+
+- name: "Create java directory"
+  ansible.builtin.file:
+    path: "{{ jdk11_install_dir }}"
+    state: directory
+    mode: '0755'
     
 - name: "Unzip package"
   ansible.builtin.unarchive:
