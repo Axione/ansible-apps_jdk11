@@ -15,7 +15,7 @@ scenario:
     - destroy
 
 platforms:
-  - name: apps-controlm-agent-ubuntu20
+  - name: apps-jdk11-ubuntu20
     image: lotusnoir/ansible_molecule_test_images:ubuntu20
     pre_build_image: true
     cgroupns_mode: host
@@ -25,7 +25,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-ubuntu22
+  - name: apps-jdk11-ubuntu22
     image: lotusnoir/ansible_molecule_test_images:ubuntu22
     pre_build_image: true
     cgroupns_mode: host
@@ -34,7 +34,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-ubuntu24
+  - name: apps-jdk11-ubuntu24
     image: lotusnoir/ansible_molecule_test_images:ubuntu24
     pre_build_image: true
     cgroupns_mode: host
@@ -43,7 +43,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-debian12
+  - name: apps-jdk11-debian12
     image: lotusnoir/ansible_molecule_test_images:debian12
     pre_build_image: true
     cgroupns_mode: host
@@ -52,7 +52,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-debian11
+  - name: apps-jdk11-debian11
     image: lotusnoir/ansible_molecule_test_images:debian11
     pre_build_image: true
     cgroupns_mode: host
@@ -61,7 +61,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-debian10
+  - name: apps-jdk11-debian10
     image: lotusnoir/ansible_molecule_test_images:debian10
     pre_build_image: true
     cgroupns_mode: host
@@ -70,7 +70,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-debiantrixie
+  - name: apps-jdk11-debiantrixie
     image: lotusnoir/ansible_molecule_test_images:debiantrixie
     pre_build_image: true
     cgroupns_mode: host
@@ -79,7 +79,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-rocky10
+  - name: apps-jdk11-rocky10
     image: lotusnoir/ansible_molecule_test_images:rocky10
     pre_build_image: true
     cgroupns_mode: host
@@ -88,7 +88,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-rocky8
+  - name: apps-jdk11-rocky8
     image: lotusnoir/ansible_molecule_test_images:rocky8
     pre_build_image: true
     cgroupns_mode: host
@@ -97,7 +97,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-rocky9
+  - name: apps-jdk11-rocky9
     image: lotusnoir/ansible_molecule_test_images:rocky9
     pre_build_image: true
     cgroupns_mode: host
@@ -106,7 +106,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-oraclelinux10
+  - name: apps-jdk11-oraclelinux10
     image: lotusnoir/ansible_molecule_test_images:oraclelinux10
     pre_build_image: true
     cgroupns_mode: host
@@ -115,7 +115,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-oraclelinux8
+  - name: apps-jdk11-oraclelinux8
     image: lotusnoir/ansible_molecule_test_images:oraclelinux8
     pre_build_image: true
     cgroupns_mode: host
@@ -124,7 +124,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     groups:
       - python3
-  - name: apps-controlm-agent-oraclelinux9
+  - name: apps-jdk11-oraclelinux9
     image: lotusnoir/ansible_molecule_test_images:oraclelinux9
     pre_build_image: true
     cgroupns_mode: host
