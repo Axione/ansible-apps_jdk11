@@ -20,7 +20,7 @@ scenario:
     - destroy
 
 platforms:
-  - name: apps-controlm-agent-${MOLECULE_DISTRIB:-debian12}
+  - name: apps-jdk11-${MOLECULE_DISTRIB:-debian12}
     image: lotusnoir/ansible_molecule_test_images:${MOLECULE_DISTRIB:-debian12}
     command: ${MOLECULE_DOCKER_COMMAND:-""}
     cgroupns_mode: host
