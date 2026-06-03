@@ -39,3 +39,10 @@
     recurse: yes
     remote_src: true
   when: dl.changed
+
+- name: "Put 0755 rights"
+  ansible.builtin.file:
+    path: /opt/java/
+    mode: "0755"
+    recurse: yes
+    type: directory
