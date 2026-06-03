@@ -36,7 +36,6 @@
     owner: "{{ jdk11_user }}"
     group: "{{ jdk11_group }}"
     mode: '0755'
-    recurse: yes
     remote_src: true
   when: dl.changed
 
