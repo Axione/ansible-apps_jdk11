@@ -41,7 +41,7 @@
 
 - name: "Put 0755 rights"
   ansible.builtin.file:
-    path: /opt/java/
-    mode: "0755"
+    path: "{{ jdk11_install_dir }}"
+    mode: '0755'
     recurse: yes
-    type: directory
+    state: directory
