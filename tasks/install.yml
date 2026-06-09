@@ -1,13 +1,4 @@
----
-- name: "Retrieve install package from path"
-  ansible.builtin.copy:
-    src: "{{ jdk11_install_path }}{% if jdk11_install_path | length > 0 %}/{% endif %}{{ jdk11_bin_name }}"
-    dest: "{{ jdk11_temp_path }}"
-    mode: '0755'
-    force: false
-  register: dl
-
-    
+---  
 - name: "Download package from url"
   ansible.builtin.get_url:
     url: '{{ jdk11_install_url }}'
