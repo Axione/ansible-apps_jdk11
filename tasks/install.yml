@@ -6,10 +6,7 @@
     mode: '0755'
     force: false
   register: dl
-  when:
-    - jdk11_install_method == "file"
-    - jdk11_install_path is defined
-    - jdk11_install_path | length > 0
+
     
 - name: "Download package from url"
   ansible.builtin.get_url:
@@ -18,10 +15,7 @@
     timeout: '60'
     mode: '0777'
   register: dl
-  when:
-    - jdk11_install_method == "url"
-    - jdk11_install_url is defined
-    - jdk11_install_url | length > 0
+
 
 - name: "Create java directory"
   ansible.builtin.file:
