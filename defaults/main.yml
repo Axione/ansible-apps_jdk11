@@ -2,9 +2,9 @@
 # Binary install
 jdk11_force_install: false
 jdk11_install_method: url
-jdk11_install_url: "https://ax-sources.s3.fr-par.scw.cloud/packages/jdk-11.0.26_linux-x64_bin.tar.gz"
+jdk11_install_url: "https://ax-sources.s3.fr-par.scw.cloud/packages/jdk-11.0.31_linux-x64_bin.tar.gz"
 jdk11_install_path: ""
-jdk11_bin_name: "jdk-11.0.26_linux-x64_bin.tar.gz"
+jdk11_bin_name: "jdk-11.0.31_linux-x64_bin.tar.gz"
 
 
 jdk11_install_dir: "/opt/java"
